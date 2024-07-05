@@ -10,16 +10,18 @@ list_of_files = [
     "src/components/data_transformation.py",    # Module for data transformation processes
     "src/components/model_trainer.py",          # Module for model training processes
     "src/components/model_evaluation.py",       # Module for model evaluation processes
-    "src/pipeline/__init__.py",                 # Initialization file for the pipeline package
+    "src/pipeline/__init__.py",                 # Initialization file for the pipeline directory
     "src/pipeline/training_pipeline.py",        # Module for training pipeline processes
     "src/pipeline/prediction_pipeline.py",      # Module for prediction pipeline processes
     "src/logger/logging.py",                    # Module for logging configurations
     "src/exception/exception.py",               # Module for custom exception handling
     "src/utils/utils.py",                       # Utility functions module
-    "src/utils/__init__.py",                    # Initialization file for the utils package
+    "src/utils/__init__.py",                    # Initialization file for the utils directory
     "tests/__init__.py",                        # Initialization file for the tests directory
     "tests/unit/__init__.py",                   # Initialization file for unit tests
+    "tests/unit/unit.py",                       # Unit tests module
     "tests/integration/__init__.py",            # Initialization file for integration tests
+    "tests/integration/int.py",                 # Integration tests module
     "init_setup.sh",                            # Shell script for initial setup
     "requirements.txt",                         # File listing project dependencies
     "requirements_dev.txt",                     # File listing development dependencies
@@ -28,6 +30,9 @@ list_of_files = [
     "pyproject.toml",                           # Project configuration file
     "tox.ini",                                  # Configuration file for Tox testing tool
     "experiments/experiments.ipynb",            # Jupyter notebook for experiments
+    ".github/workflows/ci.yaml",                # CI/CD pipeline configuration
+    "src/mongodb_connect/__init__.py",          # Initialization file for MongoDB connection package
+    "src/mongodb_connect/mongo_crud.py"         # MongoDB CRUD operations module
 ]
 
 # Iterate through the list of files to create the necessary directories and files

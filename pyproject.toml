@@ -1,0 +1,15 @@
+# Build system requirements and backend configuration
+[build-system]
+requires = ['setuptools>=42.0', "wheel"]  # Dependencies needed to build the package
+build-backend = "setuptools.build_meta"  # Build backend to use
+
+# Pytest configuration options
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"  # Directory containing the test files
+]
+
+# MyPy configuration options for static type checking
+[tool.mypy]
+mypy_path = "src"  # Directory where the source files are located
+ignore_missing_imports = true  # Ignore errors for missing imports
